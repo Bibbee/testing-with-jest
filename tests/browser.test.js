@@ -34,3 +34,13 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+
+test('Alla tre knappar ska finnas på sidan', async () => {
+    let peek = await driver.findElement(By.id('peek'));
+    let pop = await driver.findElement(By.id('pop'));
+    let push = await driver.findElement(By.id('poesi'));
+
+    expect(await peek.isDisplayed()).toBe(true);
+    expect(await pop.isDisplayed()).toBe(true);
+    expect(await push.isDisplayed()).toBe(true);
+});
