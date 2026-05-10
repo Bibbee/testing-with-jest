@@ -18,5 +18,5 @@ exports.peek = function () {
 }
 
 exports.isEmpty = function (){
-    return stack.length > 0; //ska vara === 0
+    return stack.length === 0; 
 }
