@@ -16,3 +16,7 @@ exports.pop = function () {
 exports.peek = function () {
     return _.last(stack); // Det här är medvetet felaktigt
 }
+
+exports.isEmpty = function (){
+    return stack.length > 0; //ska vara === 0
+}
